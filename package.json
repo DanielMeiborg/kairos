@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "install:ios": "yarn install && npx cap add ios",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "build:ios": "nuxt generate && npx cap sync",
+    "run:web": "nuxt cleanup && nuxt generate && nuxt preview",
+    "run:ios": "nuxt generate && npx cap sync && npx cap run ios",
+    "deploy:web": "nuxt generate && firebase deploy"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "4.6.2",
+    "@nuxtjs/ionic": "^0.8.1",
+    "@vue/cli-service": "5.0.8",
+    "nuxt": "^3.1.1"
+  },
+  "dependencies": {
+    "@capacitor-community/bluetooth-le": "^2.1.0",
+    "@capacitor/app": "4.1.1",
+    "@capacitor/core": "4.6.2",
+    "@capacitor/filesystem": "^4.1.4",
+    "@capacitor/geolocation": "^4.1.0",
+    "@capacitor/haptics": "4.1.0",
+    "@capacitor/ios": "4.6.2",
+    "@capacitor/keyboard": "4.1.1",
+    "@capacitor/share": "^4.1.1",
+    "@capacitor/status-bar": "4.1.1",
+    "@cicciosgamino/openweather-apis": "^5.2.0",
+    "@nuxtjs/tailwindcss": "^6.3.0",
+    "chart.js": "^4.2.0",
+    "vue-chartjs": "^5.2.0"
+  }
+}
